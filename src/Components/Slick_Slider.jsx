@@ -10,7 +10,7 @@ function SimpleSlider() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    spaceBetween:20
+    
   };
   return (
     <div className="slider-container">

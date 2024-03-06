@@ -1,25 +1,22 @@
-import React from 'react';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import Donut from './Components/Donut';
-import Upload from './Components/Upload';
-import SimpleSlider from './Components/Slick_Slider';
-import Home from './Components/Main';
-import { FaCloudUploadAlt } from 'react-icons/fa';
-import Slider from 'react-slick';
-import Nav from './Components/Nav';
-import Main from './Components/Main';
+import React from 'react'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Contact from './Pages/Contact';
+import Diseases from './Pages/Diseases'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
     <BrowserRouter>
-    
-    <Routes>
-      <Route path='/' element={<Nav/>}/>
-      <Route path='/main' element={<Main/>}/>
-      <Route path='/donut' element={<Donut/>}/>
-      <Route path='/upload' element={<Upload/>}/>
-      <Route path='/slider' element={<SimpleSlider/>}/>
-    </Routes>
+
+      <Routes>
+        <Route path='/home' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/diseases' element={<Diseases />} />
+
+      </Routes>
     </BrowserRouter>
   );
 }
