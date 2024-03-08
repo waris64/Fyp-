@@ -18,16 +18,18 @@ function Donut() {
                         }}
                     />
                 </div>
-                <div>
+                <div className='h-[900px]'>
                     <Bar
+                       
                         data={{
                             labels: ['A', 'B', 'C'],
                             datasets: [
                                 {
                                     label: 'Citrus Disease Detection',
-                                    data: [10, 20, 30]
+                                    data: [10, 20, 90]
                                 },
                             ],
+                          
                         }}
                     />
                 </div>

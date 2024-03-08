@@ -1,8 +1,13 @@
 import React from 'react'
-
+import ContactUs from '../Components/ContactUs'
+import Nav from '../Components/Nav'
+import Rectangle from '../assets/Rectangle 10.png'
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+      <Nav logoSrc={Rectangle}/>
+      <ContactUs/>
+    </>
   )
 }
 
