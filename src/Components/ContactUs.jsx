@@ -3,8 +3,16 @@ import Nav from "./Nav";
 import Sidebar from "./Sidebar";
 import Rectangle from "../assets/Rectangle 10.png";
 import Footer from "./Footer";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactUs = () => {
+  const showToast = () => {
+    toast.success("Message sent successfully.", {
+      position: "top-center"
+    });
+  };
+
   return (
     <div className="md:flex md:flex-col md:items-center">
       <Nav logoSrc={Rectangle} />
@@ -42,16 +50,15 @@ const ContactUs = () => {
           />
         </div>
         <div className="m-auto text-center">
-          <button type="submit" className="bg-orange-400 px-6 rounded mt-6">
+          <button type="button" onClick={showToast} className="bg-orange-400 px-6 rounded mt-6">
             Submit
           </button>
         </div>
       </form>
-
+      <ToastContainer />
       <Footer />
     </div>
   );
 };
 
 export default ContactUs;
- 

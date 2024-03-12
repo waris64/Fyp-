@@ -7,7 +7,7 @@ import Sidebar from "../Components/Sidebar";
 
 const About = () => {
   return (
-    <div className="p-4">
+    <div className="">
       <Nav logoSrc={Rectangle} />
       <div className="flex flex-col text-center items-center justify-center m-auto md:w-[50vw] pt-8">
         <h1 className="md:text-3xl text-3xl font-bold">About Us</h1>
