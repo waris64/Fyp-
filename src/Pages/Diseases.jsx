@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css'
 import Nav from '../Components/Nav';
 import Footer from '../Components/Footer';
 import Slick_Slider from '../Components/Slick_Slider'
@@ -14,8 +15,8 @@ const Diseases = () => {
   return (
     <div>
       <Nav logoSrc={Rectangle} />
-      <Sidebar/>
       <Slick_Slider className="h-[9rem]"/>
+      <Sidebar className="fixed"/>
       {/* <div className=' md:flex md:text-center md:bg-cover md:bg-no-repeat md:text-3xl md:text-white h-[9rem] md:h-[15rem]' style={{ backgroundImage: `url('${DiseaseImg}')` }}>
         <h1 className='md:mt-20 md:text-[8vh] text-3xl pt-10 text-center text-white md:m-auto m-auto md:leading-10'>Citrus Diseases </h1>
       </div> */}

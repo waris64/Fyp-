@@ -5,8 +5,8 @@ import Rectangle from '../assets/Rectangle 10.png'
 const Contact = () => {
   return (
     <>
-      <Nav logoSrc={Rectangle}/>
-      <ContactUs/>
+      <Nav logoSrc={Rectangle} className="hidden"/>
+      <ContactUs className="hidden"/>
     </>
   )
 }

@@ -11,7 +11,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className='fixed bg-white top-1 right-5 md:hidden'>
+    <div className='fixed bg-white top-5 right-9 md:hidden'>
       <motion.button
         whileTap={{ scale: 0.8 }}
         onClick={toggleSidebar}

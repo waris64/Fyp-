@@ -13,7 +13,7 @@ const Nav = ({ logoSrc }) => {
   };
 
   return (
-    <div className="md:flex md:flex-row md:justify-start  md:items-center md:text-xl md:text-white md:w-auto w-screen bg-green-950 md:py-5  overflow-x-hidden relative ">
+    <div className="md:flex md:flex-row md:justify-start  md:items-center md:text-xl md:text-white md:w-auto  bg-green-950 md:py-5  overflow-x-hidden relative ">
       <motion.img
         animate={{ rotate: 360 }}
         transition={{ repeat: 2, duration: 2, repeatDelay: 1 }}

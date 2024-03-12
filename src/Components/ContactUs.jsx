@@ -1,15 +1,18 @@
 import React from "react";
 import Nav from "./Nav";
+import Sidebar from "./Sidebar";
 import Rectangle from "../assets/Rectangle 10.png";
 import Footer from "./Footer";
+
 const ContactUs = () => {
   return (
-    <div className="md:flex md:flex-col md:items-center ">
+    <div className="md:flex md:flex-col md:items-center">
       <Nav logoSrc={Rectangle} />
+      <Sidebar className="md:hidden" />
       <h1 className="font-bold text-3xl py-10 text-center">Get in touch</h1>
       <form
         action="#"
-        className=" md:w-80 border-2 rounded-md bg-zinc-400 p-9   m-auto leading-8"
+        className="md:w-80 border-2 rounded-md bg-zinc-400 p-9 m-auto leading-8"
       >
         <div className="flex flex-col">
           <label htmlFor="firstName">First Name</label>
@@ -17,25 +20,25 @@ const ContactUs = () => {
             type="text"
             id="firstName"
             name="firstName"
-            className="border-2  py-1 rounded"
+            className="border-2 py-1 rounded"
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="firstName">Last Name</label>
+          <label htmlFor="lastName">Last Name</label>
           <input
             type="text"
-            id="firstName"
-            name="firstName"
-            className="border-2  rounded py-1"
+            id="lastName"
+            name="lastName"
+            className="border-2 rounded py-1"
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="firstName">Message</label>
+          <label htmlFor="message">Message</label>
           <textarea
             type="text"
-            id="firstName"
-            name="firstName"
-            className="border-2 rounded  py-4 "
+            id="message"
+            name="message"
+            className="border-2 rounded py-4"
           />
         </div>
         <div className="m-auto text-center">
@@ -51,3 +54,4 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
+ 
