@@ -12,19 +12,18 @@ const Main = () => {
       </div>
 
       <section className='flex flex-col md:flex-row md:justify-around md:items-center md:py-8'>
-        <div>
+  <div>
+    <img src={rectangle} className='w-96 p-6 size-96 bg-cover' alt="" />
+  </div>
+  <div className='w-full md:w-1/2 md:pl-8 flex-wrap'>
+    <h1 className='font-bold text-2xl md:text-4xl text-center pb-5 md:pb-10'>Citrus Diseases</h1>
+    <p className='text-lg md:text-lg md:text-left leading-loose text-left'>
+      Leaves from healthy plants and plants infected with prevalent diseases (citrus greening, citrus canker, scab, greasy spot).
+      Citrus greening is the most serious citrus disease caused by a bacteria which is spread by the Asian citrus psyllid (ACP). ACP is a tiny insect that transmits the bacteria to the tree when feeding.
+    </p>
+  </div>
+</section>
 
-          <img src={rectangle} className='w-96 p-6 size-96  bg-cover' alt="" />
-        </div>
-        <div className='w-full md:w-1/2 md:pl-8 flex-wrap'>
-  <h1 className='font-bold text-2xl md:text-4xl text-center pb-5 md:pb-10'>Citrus Diseases</h1>
-  <p className='text-lg md:text-lg md:text-left leading-loose text-left'>
-    Leaves from healthy plants and plants infected with prevalent diseases (citrus greening, citrus canker, scab, greasy spot).
-    Citrus greening is the most serious citrus disease caused by a bacteria which is spread by the Asian citrus psyllid (ACP). ACP is a tiny insect that transmits the bacteria to the tree when feeding.
-  </p>
-</div>
-
-      </section>
     
       <div className='md:mb-5 bg-green-950 h-96 pt-8 m-auto flex flex-col items-center justify-center md:w-[87vw]'>
         <div className="border-2  border-slate-300 rounded-lg md:w-60 w-56 h-60 shadow-2xl flex flex-col items-center justify-center bg-neutral-500">

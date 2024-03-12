@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens:
+      {
+       'tablet' : {raw:'(min-width:768px) and (min-height:388px)'},
+      },
     },
   },
   plugins: [

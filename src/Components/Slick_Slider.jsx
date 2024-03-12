@@ -3,46 +3,112 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import slide_1 from "../assets/slide_1.jpg";
+import Rec19 from "../assets/Rectangle 19.png";
+import Rec20 from "../assets/Rectangle 20.png";
+import Rec21 from "../assets/Rectangle 21.png";
+import Rec14 from "../assets/Rectangle 14.png";
+
 
 function SimpleSlider() {
   const settings = {
     dots: true,
     infinite: true,
     slidesToShow: 1,
+    slidesToScroll: 1,
     autoplay: false,
-    speed: 3000,
+    speed: 1000,
     autoplaySpeed: 2000,
     cssEase: "ease-in-out",
   };
 
   return (
-    <div className="slider-container">
-      <Slider {...settings}>
-        <div>
-          <div className="slide-item relative">
+    <div className="slider-container tablet:w-[70%] tablet:m-auto">
+      <Slider {...settings} className="">
+        <div className="">
+          <div className="slide-item relative px-1">
             <div className="image-container">
+              <div className="opacity-80 h-52">
               <img
-                src={slide_1}
+                src={Rec14}
                 alt=""
-                className="object-cover w-full h-5 rounded-lg md:w-[978px] md:h-72 md:m-auto md:pt-5"
+                className="bg-contain w-full size-48 rounded-lg   tablet:w-[70vw]   md:w-[978px] md:h-72 md:m-auto md:pt-5"
               />
             </div>
             <div className="text-overlay absolute inset-0 flex items-center ">
-              <div className="md:max-w-[978px] md:mx-auto md:text-justify md:leading-7 ">
-                <h1 className="text-white md:text-4xl md:text-center md:pb-5">Citrus Canker</h1>
-                <p className="text-white md:w-54 md:px-20 md:text-center">
-                  Citrus greening, scientifically known as Huanglongbing (HLB),
-                  is a devastating citrus disease that has posed a significant
-                  threat to citrus crops worldwide. The disease is caused by the
-                  bacterium Candidatus Liberibacter asiaticus and is primarily
-                  transmitted by the Asian citrus psyllid, a tiny insect that
-                  feeds on citrus trees. Citrus greening has emerged as a major
-                  challenge for the citrus industry, affecting the production of
-                  oranges, grapefruits, lemons, and other citrus fruits.
-                </p>
+              <div className="md:max-w-[978px] md:mx-auto m-auto tablet:w-60 table:text-center tablet:mt-0  md:text-justify md:leading-7 ">
+                <h1 className="text-white font-bold pt-32 text-2xl underline tablet:text-white tablet:underline tablet:pt-9 md:text-3xl md:text-center md:mt-48">Citrus Canker</h1>
+               
               </div>
             </div>
+
+            </div>
+
           </div>
+        </div>
+        <div>
+          <div className="slide-item relative px-1">
+            <div className="image-container">
+              <div className="     opacity-80">
+              <img
+                src={Rec19}
+                alt=""
+                className="bg-contain w-full size-48 rounded-lg tablet:w-[70vw] md:w-[978px] md:h-72 md:m-auto md:pt-5"
+              />
+            </div>
+            <div className="text-overlay absolute inset-0 flex items-center ">
+              <div className="md:max-w-[978px] m-auto md:mx-auto md:text-justify md:leading-7 ">
+              <h1 className="text-white  font-bold pt-32 text-2xl underline tablet:pt-2 md:text-3xl md:text-center md:mt-48">Citrus Greening</h1>
+                
+              </div>
+            </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div>
+          <div className="slide-item relative px-1">
+            <div className="image-container">
+              <div className="     opacity-80">
+              <img
+                src={Rec20}
+                alt=""
+                className="bg-contain w-full size-48 rounded-lg tablet:w-[70vw] md:w-[978px] md:h-72 md:m-auto md:pt-5"
+              />
+            </div>
+            <div className="text-overlay absolute inset-0 flex items-center gap-x-5">
+              <div className="md:max-w-[978px] m-auto pt-36 text-2xl underline text-white tablet:underline tablet:pt-0 md:mx-auto md:text-justify md:leading-7 ">
+              <h1 className="text-white font-bold md:text-3xl md:text-center md:mt-48">Citrus Scab</h1>
+                
+              </div>
+            </div>
+
+            </div>
+
+          </div>
+           
+        </div>
+        <div>
+          <div className="slide-item relative px-1">
+            <div className="image-container">
+              <div className="opacity-80">
+              <img
+                src={Rec21}
+                alt=""
+                className="bg-contain w-full h-48 rounded-lg tablet:w-[70vw] md:w-[978px] md:h-72 md:m-auto md:pt-5"
+              />
+            </div>
+            <div className="text-overlay absolute inset-0 flex items-center gap-x-5">
+              <div className="md:max-w-[978px] m-auto  md:mx-auto md:text-justify md:leading-7 ">
+              <h1 className="text-white font-bold text-2xl underline pt-36 tablet:text-underline tablet:pt-0 md:text-3xl md:text-center md:mt-48">Citrus Tristeza Virus</h1>
+                
+              </div>
+            </div>
+
+            </div>
+
+          </div>
+           
         </div>
       </Slider>
     </div>

@@ -8,12 +8,14 @@ import Rec14 from '../assets/Rectangle 14.png';
 import Rec19 from '../assets/Rectangle 19.png';
 import Rec20 from '../assets/Rectangle 20.png';
 import Rec21 from '../assets/Rectangle 21.png';
+import Sidebar from '../Components/Sidebar';
 
 const Diseases = () => {
   return (
     <div>
       <Nav logoSrc={Rectangle} />
-      <Slick_Slider/>
+      <Sidebar/>
+      <Slick_Slider className="h-[9rem]"/>
       {/* <div className=' md:flex md:text-center md:bg-cover md:bg-no-repeat md:text-3xl md:text-white h-[9rem] md:h-[15rem]' style={{ backgroundImage: `url('${DiseaseImg}')` }}>
         <h1 className='md:mt-20 md:text-[8vh] text-3xl pt-10 text-center text-white md:m-auto m-auto md:leading-10'>Citrus Diseases </h1>
       </div> */}
