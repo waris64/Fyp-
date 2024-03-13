@@ -26,8 +26,12 @@ const Nav = ({ logoSrc }) => {
           isOpen ? "block" : "hidden"
         } md:flex md:mx-[60%] md:items-center right-[3vw] bg-green-950 w-full`}
       >
-        <ul className="flex flex-col tablet:w-[70%] md:flex-row md:flex justify-around md:gap-x-8 items-center">
+        <motion.ul 
+        initial={{opacity:0 , x:100}}
+        whileInView={{opacity:1,x:0}}
+        className="flex flex-col tablet:w-[70%] md:flex-row md:flex justify-around md:gap-x-8 items-center">
           <motion.li
+          
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.8 }}
             style={{ x: 1 }}
@@ -67,7 +71,7 @@ const Nav = ({ logoSrc }) => {
               About
             </Link>
           </motion.li>
-        </ul>
+        </motion.ul>
       </div>
     </div>
   );

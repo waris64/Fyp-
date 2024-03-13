@@ -9,7 +9,8 @@ import 'react-toastify/dist/ReactToastify.css';
 const ContactUs = () => {
   const showToast = () => {
     toast.success("Message sent successfully.", {
-      position: "top-center"
+      position: "top-center", 
+      autoClose:1000
     });
   };
 
