@@ -10,7 +10,7 @@ import Rec19 from '../assets/Rectangle 19.png';
 import Rec20 from '../assets/Rectangle 20.png';
 import Rec21 from '../assets/Rectangle 21.png';
 import Sidebar from '../Components/Sidebar';
-
+import {motion} from 'framer-motion';
 const Diseases = () => {
   return (
     <div>
@@ -23,12 +23,12 @@ const Diseases = () => {
 
       <section className='flex flex-col md:flex-row md:justify-around md:items-center md:py-8 p-4'>
 
-        <div className='w-full md:w-1/2 md:pl-8'>
+        <motion.div className='w-full md:w-1/2 md:pl-8'>
           <h1 className='font-bold text-xl md:text-4xl mb-4'>Citrus Canker</h1>
           <p className='md:text-base md:leading-loose'>
             Citrus greening, scientifically known as Huanglongbing (HLB), is a devastating citrus disease that has posed a significant threat to citrus crops worldwide. The disease is caused by the bacterium Candidatus Liberibacter asiaticus and is primarily transmitted by the Asian citrus psyllid, a tiny insect that feeds on citrus trees. Citrus greening has emerged as a major challenge for the citrus industry, affecting the production of oranges, grapefruits, lemons, and other citrus fruits.
           </p>
-        </div>
+        </motion.div>
         <div>
           <img src={Rec14} className='w-80 sm:p-4 p-4' alt="" />
         </div>

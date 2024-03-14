@@ -24,14 +24,14 @@ const Nav = ({ logoSrc }) => {
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } md:flex md:mx-[60%] md:items-center right-[3vw] bg-green-950 w-full`}
+        } md:flex md:mx-[60%] md:items-center  right-[3vw] bg-green-950 w-full`}
       >
         <motion.ul 
-        initial={{opacity:0 , x:100}}
-        whileInView={{opacity:1,x:0}}
-        className="flex flex-col tablet:w-[70%] md:flex-row md:flex justify-around md:gap-x-8 items-center">
+          initial={{opacity:0 , x:10}}
+          whileInView={{opacity:1,x:0}}
+          className="flex flex-col tablet:mr-8 md:flex-row md:flex justify-around md:gap-x-8 items-center"
+        >
           <motion.li
-          
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.8 }}
             style={{ x: 1 }}
