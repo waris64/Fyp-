@@ -10,17 +10,20 @@ const Main = () => {
   return (
     <div>
       <motion.div
-        className="md:flex md:text-center md:bg-cover md:bg-no-repeat md:text-3xl md:text-white h-[9rem] md:h-[15rem] bg-cover bg-no-repeat text-2xl text-white py-8"
-        style={{ backgroundImage: `url('${banner}')` }}
+        className="md:flex md:text-center md:bg-cover   md:bg-no-repeat md:text-3xl md:text-white h-[9rem] md:h-[15rem] bg-cover bg-no-repeat text-2xl text-white py-8"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('${banner}')`,
+        }}
       >
         <motion.h1
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className=" md:text-[10vh] md:m-auto md:leading-[4rem] xl:leading-[rem]"
+          className=" text-center md:text-[10vh] md:m-auto md:leading-[4rem] xl:leading-[rem]"
         >
-          Citrus Disease Detection <br />
-          Services
+          Citrus Disease <label htmlFor="" >Detection</label>
+ <br />
+          <label className="text-orange-500">Services</label> 
         </motion.h1>
       </motion.div>
 
@@ -39,7 +42,7 @@ const Main = () => {
           className="w-full md:w-1/2 md:pl-8 flex-wrap"
         >
           <h1 className="font-bold text-2xl md:text-4xl text-center pb-5 md:pb-10">
-            Citrus Diseases
+            Citrus <label className="text-orange-500 md:text-orange-500"> Diseases</label>
           </h1>
           <p className="text-lg md:text-lg md:text-left leading-loose text-left">
             Leaves from healthy plants and plants infected with prevalent

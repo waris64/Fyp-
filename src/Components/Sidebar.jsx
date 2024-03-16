@@ -17,13 +17,13 @@ const Sidebar = () => {
         onClick={toggleSidebar}
         transition={{ duration: 0.5 }}
       >
-        {isOpen ? <IoClose className="size-7 -mt-9 " /> : <IoMenu className="size-7 -mt-9 " />}
+        {isOpen ? <IoClose className="size-7 -mt-9 rounded bg-orange-500" /> : <IoMenu className="rounded bg-orange-500 size-7 -mt-9 " />}
       </motion.button>
 
       <motion.div
         initial={isOpen ? { opacity: 1, y: '-7%' } : { opacity: 0, y: '-10%' }}
         animate={isOpen ? { opacity: 1, y: '-7%' } : { opacity: 0, y: '-10%' }}
-        className="sidebar w-32 rounded bg-orange-700 mt-3"
+        className="sidebar w-32 rounded bg-orange-500 -mt-1"
       >
         {isOpen && (
           <ul className="flex flex-col  items-center ">

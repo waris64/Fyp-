@@ -4,6 +4,7 @@ import logo from "../assets/Rectangle 10.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import { motion } from "framer-motion";
+import "../App.css";
 
 const Nav = ({ logoSrc }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,9 +27,9 @@ const Nav = ({ logoSrc }) => {
           isOpen ? "block" : "hidden"
         } md:flex md:mx-[60%] md:items-center  right-[3vw] bg-green-950 w-full`}
       >
-        <motion.ul 
-          initial={{opacity:0 , x:10}}
-          whileInView={{opacity:1,x:0}}
+        <motion.ul
+          initial={{ opacity: 0, x: 10 }}
+          whileInView={{ opacity: 1, x: 0 }}
           className="flex flex-col tablet:mr-8 md:flex-row md:flex justify-around md:gap-x-8 items-center"
         >
           <motion.li
@@ -37,8 +38,9 @@ const Nav = ({ logoSrc }) => {
             style={{ x: 1 }}
             className="mb-2 md:mb-0"
           >
-            <Link to="/" onClick={toggleMenu}>
-              Home
+            <Link to="/" onClick={toggleMenu} >
+              <label  >Home</label>
+              
             </Link>
           </motion.li>
           <motion.li

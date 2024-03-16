@@ -36,7 +36,7 @@ function SimpleSlider() {
             </div>
             <div className="text-overlay absolute inset-0 flex items-center ">
               <div className="md:max-w-[978px] md:mx-auto m-auto tablet:w-60 table:text-center tablet:mt-0  md:text-justify md:leading-7 ">
-                <h1 className="text-white font-bold pt-32 text-2xl underline tablet:text-white tablet:underline tablet:pt-9 md:text-3xl md:text-center md:mt-48">Citrus Canker</h1>
+                <h1 className="text-white font-bold pt-32 text-2xl underline tablet:text-white tablet:underline tablet:pt-9 md:text-3xl md:text-center md:mt-48">Citrus <label htmlFor="color" className="text-orange-500 md:text-orange-500">Canker</label> </h1>
                
               </div>
             </div>
@@ -57,7 +57,7 @@ function SimpleSlider() {
             </div>
             <div className="text-overlay absolute inset-0 flex items-center ">
               <div className="md:max-w-[978px] m-auto md:mx-auto md:text-justify md:leading-7 ">
-              <h1 className="text-white  font-bold pt-32 text-2xl underline tablet:pt-2 md:text-3xl md:text-center md:mt-48">Citrus Greening</h1>
+              <h1 className="text-white  font-bold pt-32 text-2xl underline tablet:pt-2 md:text-3xl md:text-center md:mt-48">Citrus  <label htmlFor="" className="text-orange-500 md:text-orange-500">Greening</label> </h1>
                 
               </div>
             </div>
@@ -78,7 +78,7 @@ function SimpleSlider() {
             </div>
             <div className="text-overlay absolute inset-0 flex items-center gap-x-5">
               <div className="md:max-w-[978px] m-auto pt-36 text-2xl underline text-white tablet:underline tablet:pt-0 md:mx-auto md:text-justify md:leading-7 ">
-              <h1 className="text-white font-bold md:text-3xl md:text-center md:mt-48">Citrus Scab</h1>
+              <h1 className="text-white font-bold md:text-3xl md:text-center md:mt-48">Citrus <label className="text-orange-500 md:text-orange-500">Scab</label> </h1>
                 
               </div>
             </div>
@@ -100,7 +100,7 @@ function SimpleSlider() {
             </div>
             <div className="text-overlay absolute inset-0 flex items-center gap-x-5">
               <div className="md:max-w-[978px] m-auto  md:mx-auto md:text-justify md:leading-7 ">
-              <h1 className="text-white font-bold text-2xl underline pt-36 tablet:text-underline tablet:pt-0 md:text-3xl md:text-center md:mt-48">Citrus Tristeza Virus</h1>
+              <h1 className="text-white font-bold text-2xl underline pt-36 tablet:text-underline tablet:pt-0 md:text-3xl md:text-center md:mt-48">Citrus <label className="text-orange-500 md:text-orange-500">Tristeza</label>  Virus</h1>
                 
               </div>
             </div>
