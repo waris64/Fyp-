@@ -11,19 +11,20 @@ const Sidebar = () => {
   };
 
   return (
-    <div className='fixed  top-5  text-white md:hidden '>
+    <div className='fixed  top-5  left-5 text-white md:hidden '>
       <motion.button
         whileTap={{ scale: 0.8 }}
         onClick={toggleSidebar}
         transition={{ duration: 0.5 }}
       >
-        {isOpen ? <IoClose className="size-7 -mt-9 rounded bg-orange-500" /> : <IoMenu className="rounded bg-orange-500 size-7 -mt-9 " />}
+        {isOpen ? <IoClose className="size-7 -mt-9 rounded bg-orange-500 -ml-4" /> : <IoMenu className="size-7 -mt-9 rounded bg-orange-500 -ml-4" />}
       </motion.button>
 
       <motion.div
         initial={isOpen ? { opacity: 1, y: '-7%' } : { opacity: 0, y: '-10%' }}
         animate={isOpen ? { opacity: 1, y: '-7%' } : { opacity: 0, y: '-10%' }}
-        className="sidebar w-32 rounded bg-orange-500 -mt-1"
+        transition={{duration:.5}}
+        className="sidebar w-40 rounded bg-orange-500 mt-1 pt-4 pb-4 -ml-4"
       >
         {isOpen && (
           <ul className="flex flex-col  items-center ">
@@ -31,6 +32,7 @@ const Sidebar = () => {
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
               style={{ x: 1 }}
+              transition={{}}
               className="mb-2 md:mb-0"
             >
               <Link to="/" onClick={toggleSidebar}>

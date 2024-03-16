@@ -18,10 +18,10 @@ const ContactUs = () => {
     <div className="md:flex md:flex-col md:items-center">
       <Nav logoSrc={Rectangle} />
       <Sidebar className="md:hidden" />
-      <h1 className="font-bold text-3xl py-10 text-center">Get in <label className="text-orange-500">touch</label></h1>
+      <h1 className="font-bold text-2xl py-8 text-center">Get in <label className="text-orange-500">touch</label></h1>
       <form
         action="#"
-        className="md:w-80 border-2 rounded-md bg-zinc-400 p-9 m-auto leading-8"
+        className="md:w-80 border-2 rounded-md bg-zinc-400 p-9 m-2 leading-8 "
       >
         <div className="flex flex-col">
           <label htmlFor="firstName">First Name</label>

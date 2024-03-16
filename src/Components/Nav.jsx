@@ -14,7 +14,7 @@ const Nav = ({ logoSrc }) => {
   };
 
   return (
-    <div className="md:flex md:flex-row md:justify-start md:items-center md:text-xl md:text-white w-full bg-green-950 md:py-5 overflow-x-hidden relative">
+    <div className="md:flex md:flex-row  md:justify-start md:items-center md:text-xl md:text-white tablet:w-screen w-1/2 bg-green-950 md:py-5 overflow-x-hidden relative">
       <motion.img
         animate={{ rotate: 360 }}
         transition={{ repeat: 2, duration: 2, repeatDelay: 1 }}
@@ -30,7 +30,7 @@ const Nav = ({ logoSrc }) => {
         <motion.ul
           initial={{ opacity: 0, x: 10 }}
           whileInView={{ opacity: 1, x: 0 }}
-          className="flex flex-col tablet:mr-8 md:flex-row md:flex justify-around md:gap-x-8 items-center"
+          className="flex flex-col  md:flex-row md:flex justify-around md:gap-x-8 items-center"
         >
           <motion.li
             whileHover={{ scale: 1.2 }}

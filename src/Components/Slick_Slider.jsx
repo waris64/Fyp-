@@ -22,8 +22,8 @@ function SimpleSlider() {
   };
 
   return (
-    <div className="slider-container tablet:w-[70%] tablet:m-auto">
-      <Slider {...settings} className="">
+    <div className="slider-container tablet:w-[70%] tablet:m-auto size-72 m-auto">
+      <Slider {...settings} className="pt-4">
         <div className="">
           <div className="slide-item relative px-1">
             <div className="image-container">
@@ -31,7 +31,7 @@ function SimpleSlider() {
               <img
                 src={Rec14}
                 alt=""
-                className="bg-contain w-full size-48 rounded-lg   tablet:w-[70vw]   md:w-[978px] md:h-72 md:m-auto md:pt-5"
+                className="bg-contain w-full size-48 rounded   tablet:w-[70vw]   md:w-[978px] md:h-72 md:m-auto md:pt-5"
               />
             </div>
             <div className="text-overlay absolute inset-0 flex items-center ">
@@ -52,7 +52,7 @@ function SimpleSlider() {
               <img
                 src={Rec19}
                 alt=""
-                className="bg-contain w-full size-48 rounded-lg tablet:w-[70vw] md:w-[978px] md:h-72 md:m-auto md:pt-5"
+                className="bg-contain w-full size-48 rounded tablet:w-[70vw] md:w-[978px] md:h-72 md:m-auto md:pt-5"
               />
             </div>
             <div className="text-overlay absolute inset-0 flex items-center ">
@@ -73,7 +73,7 @@ function SimpleSlider() {
               <img
                 src={Rec20}
                 alt=""
-                className="bg-contain w-full size-48 rounded-lg tablet:w-[70vw] md:w-[978px] md:h-72 md:m-auto md:pt-5"
+                className="bg-contain w-full size-48 rounded tablet:w-[70vw] md:w-[978px] md:h-72 md:m-auto md:pt-5"
               />
             </div>
             <div className="text-overlay absolute inset-0 flex items-center gap-x-5">
@@ -95,7 +95,7 @@ function SimpleSlider() {
               <img
                 src={Rec21}
                 alt=""
-                className="bg-contain w-full h-48 rounded-lg tablet:w-[70vw] md:w-[978px] md:h-72 md:m-auto md:pt-5"
+                className="bg-contain w-full h-48 rounded tablet:w-[70vw] md:w-[978px] md:h-72 md:m-auto md:pt-5"
               />
             </div>
             <div className="text-overlay absolute inset-0 flex items-center gap-x-5">
