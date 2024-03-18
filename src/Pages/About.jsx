@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="p-7 about overflow-hidden">
+    <div className="p-7 md:p-0 about overflow-hidden">
       <Nav logoSrc={Rectangle} />
       <Sidebar className="bg-red-400" />
       <motion.div

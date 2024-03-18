@@ -2,9 +2,10 @@ import React from 'react';
 import { Chart as ChartJS } from 'chart.js/auto';
 import { Doughnut,Bar } from 'react-chartjs-2';
 function Donut() {
+    
     return (
-        <div className=''>
-            <div className='flex justify-around'>
+        <div className='-pb-9'>
+            <div className='flex md:justify-around  flex-col'>
                 <div>
                     <Doughnut
                         data={{
@@ -20,7 +21,7 @@ function Donut() {
                 </div>
                 <div className='h-[900px]'>
                     <Bar
-                       
+                        id="bar"
                         data={{
                             labels: ['A', 'B', 'C'],
                             datasets: [
