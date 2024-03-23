@@ -14,12 +14,12 @@ const Nav = ({ logoSrc }) => {
   };
 
   return (
-    <div className="md:flex md:flex-row  md:justify-start md:items-center md:text-xl md:text-white tablet:w-screen w-1/2 bg-green-950 md:py-5 overflow-x-hidden relative">
+    <div className="md:flex md:flex-row  md:justify-start md:items-center  md:text-white    bg-green-950 md:py-5  relative">
       <motion.img
         animate={{ rotate: 360 }}
         transition={{ repeat: 2, duration: 2, repeatDelay: 1 }}
         src={logoSrc}
-        className="w-12 h-12 absolute top-2 left-2"
+        className="w-12 h-12 absolute top-2 left-2 hidden md:inline"
         alt=""
       />
       <div

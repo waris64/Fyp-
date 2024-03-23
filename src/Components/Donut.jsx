@@ -5,7 +5,7 @@ function Donut() {
     
     return (
         <div className='-pb-9'>
-            <div className='flex md:justify-around  flex-col'>
+            <div className='flex flex-col md:justify-around md:flex-row  '>
                 <div>
                     <Doughnut
                         data={{
@@ -19,7 +19,7 @@ function Donut() {
                         }}
                     />
                 </div>
-                <div className='h-[900px]'>
+                <div className='w-[400px] '>
                     <Bar
                         id="bar"
                         data={{
@@ -34,6 +34,17 @@ function Donut() {
                         }}
                     />
                 </div>
+            </div>
+            <div>
+                <h1 className='text-4xl'>Results</h1>
+                <p>
+                  <label htmlFor="disease_name" className='text-2xl'>Disease Name:{}</label>  
+                  <p>
+                    
+                  </p>
+                </p>
+
+              
             </div>
         </div>
     );
