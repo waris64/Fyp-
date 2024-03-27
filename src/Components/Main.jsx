@@ -8,7 +8,7 @@ const Main = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleAnalyze = () => {
-    setIsOpen(true); // Set isOpen state to true when Analyze button is clicked
+    setIsOpen(!isOpen); 
   };
 
   return (

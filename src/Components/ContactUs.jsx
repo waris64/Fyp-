@@ -15,8 +15,10 @@ const ContactUs = () => {
   };
 
   return (
+   <>
+   <Nav logoSrc={Rectangle} />
+   
     <div className="md:flex md:flex-col md:items-center">
-      <Nav logoSrc={Rectangle} />
       <Sidebar className="md:hidden" />
       <h1 className="font-bold text-2xl py-8 text-center">Get in <label className="text-orange-500">touch</label></h1>
       <form
@@ -59,6 +61,8 @@ const ContactUs = () => {
       <ToastContainer />
       <Footer />
     </div>
+    </>
+    
   );
 };
 
