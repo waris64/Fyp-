@@ -12,7 +12,7 @@ function Donut() {
             "Citrus canker is a bacterial infection affecting citrus trees.",
             "It causes characteristic lesions on leaves, stems, and fruit.",
             "Lesions often appear as raised, corky areas surrounded by water-soaked margins.",
-            "The disease spreads rapidly through wind-driven rain, insects, and contaminated tools.",
+            "The disease spreads rapidly through wind-driven rain, insects, and contaminated  tools.",
             "Infected trees may experience defoliation, premature fruit drop, and overall decline in health.",
             "Management strategies include pruning infected plant parts, applying copper-based sprays, and implementing quarantine measures.",
             "Preventive measures such as planting disease-resistant citrus varieties, practicing proper sanitation, and monitoring for early signs of infection can help mitigate the impact of citrus canker."
@@ -55,11 +55,11 @@ function Donut() {
                     />
                 </div>
             </div>
-            <div>
-                <h1 className='lg:text-4xl lg:m-auto flex '>Results</h1>
-                <p className=''>
-                    <label htmlFor="disease_name" className='text-2xl'>Disease Name: Citrus Canker</label>
-                    <ul className='text-left pl-6'>
+            <div className='shadow-2xl lg:ml-9 lg:px-16  boder-2 lg:w-[93vw] lg:pt-16 lg:mt-9 rounded-lg lg:pb-10  lg:border-b-4'>
+                <h1 className='lg:text-4xl lg:m-auto flex  lg:justify-center lg:pb-8 underline '>Results</h1>
+                <p className='flex lg:flex-col lg:justify-center lg:pl-56 lg:pb-7'>
+                    <label htmlFor="disease_name" className='lg:text-2xl lg:pb-3'>Disease Name: Citrus Canker</label>
+                    <ul className='text-left pl-8 list-disc lg:text-wrap'>
                         <li>Citrus canker is a bacterial infection affecting citrus trees.</li>
                         <li>It causes characteristic lesions on leaves, stems, and fruit.</li>
                         <li>Lesions often appear as raised, corky areas surrounded by water-soaked margins.</li>
@@ -69,7 +69,7 @@ function Donut() {
                         <li>Preventive measures such as planting disease-resistant citrus varieties, practicing proper sanitation, and monitoring for early signs of infection can help mitigate the impact of citrus canker.</li>
                     </ul>
                 </p>
-                <button onClick={handlePrint}>Generate PDF</button>
+                <button onClick={handlePrint} className='lg:ml-[35rem] lg:p-2 lg:rounded lg:border-2 '>Generate Report</button>
             </div>
         </div>
     );

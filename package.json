@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.1",
     "cors": "^2.8.5",

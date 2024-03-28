@@ -73,6 +73,16 @@ const Nav = ({ logoSrc }) => {
               About
             </Link>
           </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            style={{ y: 1 }}
+            className="mb-2 md:mb-0"
+          >
+            <Link to="/login" onClick={toggleMenu}>
+              LogIn
+            </Link>
+          </motion.li>
         </motion.ul>
       </div>
     </div>
